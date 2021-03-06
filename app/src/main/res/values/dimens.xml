@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+
+    <dimen name="switcher_elevation">4dp</dimen>
+    <dimen name="switcher_height">26dp</dimen>
+    <dimen name="switcher_width">46dp</dimen>
+    <dimen name="margin_medium">5dp</dimen>
+    <dimen name="text_size_title">12dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+</resources>
