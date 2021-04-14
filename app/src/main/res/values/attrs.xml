@@ -24,4 +24,11 @@
         <attr name="switcher_off_color" format="color" />
         <attr name="switcher_icon_color" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="circleview">
+        <attr name="onCenter" format="boolean"/>
+        <attr name="circle_background" format="color" />
+        <attr name="circle_radius" format="dimension" />
+    </declare-styleable>
+
 </resources>

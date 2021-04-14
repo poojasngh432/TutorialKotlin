@@ -16,6 +16,7 @@ import androidx.annotation.RequiresApi;
 import com.poojasingh.tutorialkotlin.R;
 
 public class CustomViewExample extends View {
+    private static final int SQUARE_SIZE = 5000;
 
     public CustomViewExample(Context context) {
         super(context);
@@ -48,8 +49,8 @@ public class CustomViewExample extends View {
         RectF rect = new RectF();
         rect.left = 0;
         rect.top = 0;
-        rect.right = rect.left + 5000;
-        rect.bottom = rect.top + 3000;
+        rect.right = rect.left + SQUARE_SIZE;
+        rect.bottom = rect.top + SQUARE_SIZE;
 
         Paint paint = new Paint();
         paint.setColor(getContext().getResources().getColor(R.color.green_light3));
