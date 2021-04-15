@@ -2,22 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.poojasingh.tutorialkotlin">
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TutorialKotlin"
-        android:name="androidx.multidex.MultiDexApplication">
-        <activity android:name=".ui.ReceiverActivity"></activity>
+        android:theme="@style/Theme.TutorialKotlin">
+        <activity android:name=".ui.ExtensionFunctionActivity"></activity>
+        <activity android:name=".ui.ListViewHolderActivity" />
+        <activity android:name=".ui.ReceiverActivity" />
         <activity android:name=".ui.AsyncTaskActivity" />
         <activity android:name=".ui.ServiceActivity" />
         <activity android:name=".ui.HandlerActivity" />
-        <activity android:name=".ui.DataBindingViewModelActivity">
-        </activity>
+        <activity android:name=".ui.DataBindingViewModelActivity" />
         <activity android:name=".ui.ConstraintLayoutExampleActivity" />
         <activity android:name=".ui.ViewModelActivity" />
         <activity android:name=".ui.DataBindingActivity" />
@@ -36,7 +37,7 @@
             android:exported="true" />
         <service android:name=".service.ServiceAsyncExample" />
         <service android:name=".service.MusicService" />
-        <service android:name=".service.ForegroundService"/>
+        <service android:name=".service.ForegroundService" />
     </application>
 
 </manifest>

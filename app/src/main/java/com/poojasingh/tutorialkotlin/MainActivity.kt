@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.handlerBtn.setOnClickListener(this)
         binding.asynctaskBtn.setOnClickListener(this)
         binding.broadcastBtn.setOnClickListener(this)
+        binding.listviewViewholderBtn.setOnClickListener(this)
+        binding.extensionFunctionBtn.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View?) {
@@ -57,34 +60,34 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     val intent = Intent(this, ReceiverActivity::class.java)
                     startActivity(intent)
                 }
-                /*binding.dataBindingBtn.id -> {
-                    val intent = Intent(this, DataBindingActivity::class.java)
+                binding.listviewViewholderBtn.id -> {
+                    val intent = Intent(this, ListViewHolderActivity::class.java)
                     startActivity(intent)
                 }
-                binding.viewmodelBtn.id -> {
-                    val intent = Intent(this, ViewModelActivity::class.java)
+                binding.extensionFunctionBtn.id -> {
+                    val intent = Intent(this, ExtensionFunctionActivity::class.java)
                     startActivity(intent)
                 }
-                binding.clExampleBtn.id -> {
-                    val intent = Intent(this, ConstraintLayoutExampleActivity::class.java)
-                    startActivity(intent)
-                }
-                binding.serviceBtn.id -> {
-                    val intent = Intent(this, ServiceActivity::class.java)
-                    startActivity(intent)
-                }
-                binding.serviceBtn.id -> {
-                    val intent = Intent(this, HandlerActivity::class.java)
-                    startActivity(intent)
-                }
-                binding.asynctaskBtn.id -> {
-                    val intent = Intent(this, AsyncTaskActivity::class.java)
-                    startActivity(intent)
-                }
-                binding.broadcastBtn.id -> {
-                    val intent = Intent(this, ReceiverActivity::class.java)
-                    startActivity(intent)
-                }*/
+//                binding.clExampleBtn.id -> {
+//                    val intent = Intent(this, ConstraintLayoutExampleActivity::class.java)
+//                    startActivity(intent)
+//                }
+//                binding.serviceBtn.id -> {
+//                    val intent = Intent(this, ServiceActivity::class.java)
+//                    startActivity(intent)
+//                }
+//                binding.serviceBtn.id -> {
+//                    val intent = Intent(this, HandlerActivity::class.java)
+//                    startActivity(intent)
+//                }
+//                binding.asynctaskBtn.id -> {
+//                    val intent = Intent(this, AsyncTaskActivity::class.java)
+//                    startActivity(intent)
+//                }
+//                binding.broadcastBtn.id -> {
+//                    val intent = Intent(this, ReceiverActivity::class.java)
+//                    startActivity(intent)
+//                }
             }
         }
     }
