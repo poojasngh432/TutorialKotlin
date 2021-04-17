@@ -3,6 +3,12 @@
     package="com.poojasingh.tutorialkotlin">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -12,7 +18,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TutorialKotlin">
-        <activity android:name=".ui.ExtensionFunctionActivity"></activity>
+        <activity android:name=".studyexample.SyntaxExampleActivity"></activity>
+        <activity android:name=".ui.PermissionsActivity" />
+        <activity android:name=".ui.TextViewActivity" />
+        <activity android:name=".ui.ViewExampleActivity" />
+        <activity android:name=".ui.ExtensionFunctionActivity" />
         <activity android:name=".ui.ListViewHolderActivity" />
         <activity android:name=".ui.ReceiverActivity" />
         <activity android:name=".ui.AsyncTaskActivity" />

@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.broadcastBtn.setOnClickListener(this)
         binding.listviewViewholderBtn.setOnClickListener(this)
         binding.extensionFunctionBtn.setOnClickListener(this)
+        binding.viewExBtn.setOnClickListener(this)
+        binding.permissionsBtn.setOnClickListener(this)
 
     }
 
@@ -68,14 +70,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     val intent = Intent(this, ExtensionFunctionActivity::class.java)
                     startActivity(intent)
                 }
-//                binding.clExampleBtn.id -> {
-//                    val intent = Intent(this, ConstraintLayoutExampleActivity::class.java)
-//                    startActivity(intent)
-//                }
-//                binding.serviceBtn.id -> {
-//                    val intent = Intent(this, ServiceActivity::class.java)
-//                    startActivity(intent)
-//                }
+                binding.viewExBtn.id -> {
+                    val intent = Intent(this, ViewExampleActivity::class.java)
+                    startActivity(intent)
+                }
+                binding.permissionsBtn.id -> {
+                    val intent = Intent(this, PermissionsActivity::class.java)
+                    startActivity(intent)
+                }
 //                binding.serviceBtn.id -> {
 //                    val intent = Intent(this, HandlerActivity::class.java)
 //                    startActivity(intent)
