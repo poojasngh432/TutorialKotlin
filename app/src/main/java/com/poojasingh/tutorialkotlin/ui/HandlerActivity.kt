@@ -1,22 +1,21 @@
 package com.poojasingh.tutorialkotlin.ui
 
-import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.os.Message
+import android.os.*
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.poojasingh.tutorialkotlin.R
-import com.poojasingh.tutorialkotlin.service.IntentServiceExample
 import java.util.*
+
 
 class HandlerActivity : AppCompatActivity() {
     //to run a code on background thread using Handler
+    /**
+     * Remember to call handlerThread.quit() when you are done with the background thread or on your activities onDestroy() method.
+     */
     var backgroundHandler: Handler? = null
     private val TAG = "HandlerActivity"
     private lateinit var mRandom: Random
@@ -136,6 +135,48 @@ class HandlerActivity : AppCompatActivity() {
         // Finally, generate the color
         // Return the color
         return Color.HSVToColor(alpha, floatArrayOf(hue.toFloat(), saturation, value))
+    }
+
+    fun startHandlerThread() {
+        val handlerThread = HandlerThread("MyHandlerThread")
+        handlerThread.start()
+        val looper = handlerThread.looper
+        val handler = Handler(looper)
+//        in order to use it, you simply have to post Runnable to the Handler thread.
+        handler.post {
+
+        }
+    }
+
+    /**
+     * If you have a few different tasks you would like to perform on the background thread, it may be a better idea to extend handler
+     * and adding handling for different messages. Note, there is still one background thread here.
+     * If you want more threads, you’ll have to create more Handlers and HandlerThreads.
+     */
+
+    fun manyHandlers() {
+        val handlerThread = HandlerThread("MyHandlerThread")
+        handlerThread.start()
+        val looper = handlerThread.looper
+        if (mHandler == null) {
+            mHandler = object : Handler(looper) {
+                override fun handleMessage(msg: Message) {
+                    when (msg.what) {
+                        1 -> {
+//                            doSomething()
+                        Log.d(TAG, "action one")
+                        }
+//                        SOMETHING_ELSE_ACTION -> doMoreThings()
+                        else -> {
+                            Log.d(TAG, "action two")
+                        }
+                    }
+                }
+            }
+        }
+        val msg: Message? = null
+        mHandler.obtainMessage(1, "")
+        mHandler.sendMessage(msg!!)
     }
 
 }
