@@ -2,4 +2,6 @@
     <string name="app_name">TutorialKotlin</string>
     <string name="switcher_x">Switcher X</string>
     <string name="demo_text">text will change here</string>
+    <string name="news_list">News List</string>
+    <string name="loading_news">Loading News</string>
 </resources>

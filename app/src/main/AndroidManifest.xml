@@ -18,7 +18,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TutorialKotlin">
-        <activity android:name=".studyexample.SyntaxExampleActivity"></activity>
+        <activity android:name=".ui.NewsActivity"></activity>
+        <activity android:name=".ui.NewsDetailActivity"/>
+        <activity android:name=".ui.ToolbarExActivity" />
+        <activity android:name=".ui.BitmapExamplesActivity" />
+        <activity android:name=".ui.WebViewActivity" />
+        <activity android:name=".studyexample.SyntaxExampleActivity" />
         <activity android:name=".ui.PermissionsActivity" />
         <activity android:name=".ui.TextViewActivity" />
         <activity android:name=".ui.ViewExampleActivity" />

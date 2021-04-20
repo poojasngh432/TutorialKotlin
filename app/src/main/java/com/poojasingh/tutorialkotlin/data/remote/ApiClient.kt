@@ -1,7 +1,7 @@
 package com.poojasingh.tutorialkotlin.data.remote
 
 import com.google.gson.GsonBuilder
-import com.poojasingh.tutorialkotlin.`interface`.ApiInterface
+import com.poojasingh.tutorialkotlin.interfaces.ApiInterface
 import com.poojasingh.tutorialkotlin.util.Constants
 import com.poojasingh.tutorialkotlin.util.Constants.Companion.DEBUG
 import com.poojasingh.tutorialkotlin.util.Constants.Companion.REQUEST_TIMEOUT_DURATION

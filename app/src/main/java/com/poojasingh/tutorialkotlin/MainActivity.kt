@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.extensionFunctionBtn.setOnClickListener(this)
         binding.viewExBtn.setOnClickListener(this)
         binding.permissionsBtn.setOnClickListener(this)
+        binding.webviewBtn.setOnClickListener(this)
+        binding.bitmapBtn.setOnClickListener(this)
+        binding.toolbarBtn.setOnClickListener(this)
+        binding.newsBtn.setOnClickListener(this)
 
     }
 
@@ -78,18 +82,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     val intent = Intent(this, PermissionsActivity::class.java)
                     startActivity(intent)
                 }
-//                binding.serviceBtn.id -> {
-//                    val intent = Intent(this, HandlerActivity::class.java)
-//                    startActivity(intent)
-//                }
-//                binding.asynctaskBtn.id -> {
-//                    val intent = Intent(this, AsyncTaskActivity::class.java)
-//                    startActivity(intent)
-//                }
-//                binding.broadcastBtn.id -> {
-//                    val intent = Intent(this, ReceiverActivity::class.java)
-//                    startActivity(intent)
-//                }
+                binding.webviewBtn.id -> {
+                    val intent = Intent(this, WebViewActivity::class.java)
+                    startActivity(intent)
+                }
+                binding.bitmapBtn.id -> {
+                    val intent = Intent(this, BitmapExamplesActivity::class.java)
+                    startActivity(intent)
+                }
+                binding.toolbarBtn.id -> {
+                    val intent = Intent(this, ToolbarExActivity::class.java)
+                    startActivity(intent)
+                }
+                binding.newsBtn.id -> {
+                    val intent = Intent(this, NewsActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }

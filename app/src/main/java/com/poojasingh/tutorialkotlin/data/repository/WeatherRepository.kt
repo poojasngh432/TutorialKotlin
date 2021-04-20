@@ -1,7 +1,6 @@
 package com.poojasingh.tutorialkotlin.data.repository
 
-import android.util.Log
-import com.poojasingh.tutorialkotlin.`interface`.ApiInterface
+import com.poojasingh.tutorialkotlin.interfaces.ApiInterface
 import com.poojasingh.tutorialkotlin.data.model.WeatherModel
 import com.poojasingh.tutorialkotlin.data.remote.ApiClient
 import com.poojasingh.tutorialkotlin.data.remote.response.GitResponse

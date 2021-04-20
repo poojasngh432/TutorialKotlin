@@ -122,6 +122,17 @@ class HandlerActivity : AppCompatActivity() {
         }*/
     }
 
+    fun startHandlerThread() {
+        val handlerThread = HandlerThread("MyHandlerThread")
+        handlerThread.start()
+        val looper = handlerThread.looper
+        val handler = Handler(looper)
+//        in order to use it, you simply have to post Runnable to the Handler thread.
+        handler.post {
+
+        }
+    }
+
     // Custom method to generate random HSV color
     fun randomHSVColor(): Int {
         // Generate a random hue value between 0 to 360
@@ -135,17 +146,6 @@ class HandlerActivity : AppCompatActivity() {
         // Finally, generate the color
         // Return the color
         return Color.HSVToColor(alpha, floatArrayOf(hue.toFloat(), saturation, value))
-    }
-
-    fun startHandlerThread() {
-        val handlerThread = HandlerThread("MyHandlerThread")
-        handlerThread.start()
-        val looper = handlerThread.looper
-        val handler = Handler(looper)
-//        in order to use it, you simply have to post Runnable to the Handler thread.
-        handler.post {
-
-        }
     }
 
     /**

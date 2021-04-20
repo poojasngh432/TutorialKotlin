@@ -3,7 +3,7 @@ package com.poojasingh.tutorialkotlin.viewmodel
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.poojasingh.tutorialkotlin.`interface`.ApiInterface
+import com.poojasingh.tutorialkotlin.interfaces.ApiInterface
 import com.poojasingh.tutorialkotlin.data.model.WeatherModel
 import com.poojasingh.tutorialkotlin.data.remote.ApiClient
 import com.poojasingh.tutorialkotlin.data.remote.response.GitResponse
