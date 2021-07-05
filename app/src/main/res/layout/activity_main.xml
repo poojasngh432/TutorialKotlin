@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="2"
-        android:rowCount="10"
+        android:rowCount="20"
         tools:context=".MainActivity">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -183,13 +183,58 @@
             android:textColor="@color/black" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rxJavaExamples"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="0.5"
             android:layout_margin="@dimen/dp_5"
             android:background="@drawable/round_corner_bg_pink"
             style="@style/CardView.Light"
-            android:text="Data Binding"
+            android:text="Rx Java Examples"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/round_corner_bg_pink"
+            style="@style/CardView.Light"
+            android:text="Edit"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/round_corner_bg_pink"
+            style="@style/CardView.Light"
+            android:text="Edit"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/round_corner_bg_pink"
+            style="@style/CardView.Light"
+            android:text="Edit"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/round_corner_bg_pink"
+            style="@style/CardView.Light"
+            android:text="Edit"
             android:textColor="@color/black" />
 
     </GridLayout>

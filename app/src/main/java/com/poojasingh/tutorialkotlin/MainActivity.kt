@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.bitmapBtn.setOnClickListener(this)
         binding.toolbarBtn.setOnClickListener(this)
         binding.newsBtn.setOnClickListener(this)
+        binding.rxJavaExamples.setOnClickListener(this)
 
     }
 
@@ -92,6 +93,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 binding.toolbarBtn.id -> {
                     val intent = Intent(this, ToolbarExActivity::class.java)
+                    startActivity(intent)
+                }
+                binding.newsBtn.id -> {
+                    val intent = Intent(this, NewsActivity::class.java)
                     startActivity(intent)
                 }
                 binding.newsBtn.id -> {
