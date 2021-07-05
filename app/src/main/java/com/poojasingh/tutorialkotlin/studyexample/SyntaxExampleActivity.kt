@@ -23,7 +23,7 @@ class SyntaxExampleActivity : AppCompatActivity() {
     }
 
     var myString: String? = null
-    lateinit var item: Items //Initialise later
+    lateinit var item: Items  //Initialise later
     lateinit var items: List<Items>
 
     override fun onCreate(savedInstanceState: Bundle?) {
