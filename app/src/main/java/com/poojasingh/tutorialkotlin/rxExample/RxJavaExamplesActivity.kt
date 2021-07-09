@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.poojasingh.tutorialkotlin.R
 import com.poojasingh.tutorialkotlin.data.model.Items
-import com.poojasingh.tutorialkotlin.data.model.Repo
-import com.sun.tools.javac.comp.Todo
 import io.reactivex.*
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
