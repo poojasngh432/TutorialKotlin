@@ -1,2 +1,2 @@
-include ':app', ':demo'
-rootProject.name = "TutorialKotlin"
+include ':app'
+include ':demolib'

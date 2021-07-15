@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toolsdemoapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/compass"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.PicassoActivity"></activity>
+        <activity android:name=".activity.BottomNavActivity2" />
+        <activity
+            android:name=".activity.BottomNavActivity"
+            android:label="@string/title_activity_bottom_nav" />
+        <activity android:name=".activity.DraggableItemsActivity" />
+        <activity android:name=".activity.SwipeToActionActivity" />
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <activity
+            android:name=".activity.SendEmailActivity"
+            android:label="Send Email From Android" />
+        <activity android:name=".activity.PermissionsActivity" />
+        <activity
+            android:name=".activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.FreezeLayoutOnTopActivity" />
+        <activity android:name=".activity.TouchListenersActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.UsersListActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.ActionBarActivity" />
+        <activity android:name=".activity.Views" />
+        <activity android:name=".activity.ErrorMessages" />
+        <activity android:name=".activity.DialogBoxes" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

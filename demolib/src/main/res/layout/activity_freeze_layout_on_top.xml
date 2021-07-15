@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".activity.FreezeLayoutOnTopActivity">
+
+    <com.amar.library.ui.StickyScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        app:stickyHeader="@+id/filterLayout">
+
+        <RelativeLayout
+            android:id="@+id/eachUnitSaleMainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/dp_10">
+
+            <!-- Select Store Button -->
+            <Button
+                android:id="@+id/selectStoreBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:focusable="true"
+                android:text="Select Outlet  " />
+
+            <!-- No Sale Done Button -->
+            <CheckBox
+                android:id="@+id/salesDoneToggleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectStoreBtn"
+                android:text="No data for today"
+                android:layout_margin="@dimen/dp_5"/>
+
+            <!-- Start Of Label section for brand list -->
+            <LinearLayout
+                android:id="@+id/labelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salesDoneToggleBtn"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Select Brand Button -->
+                <TextView
+                    android:id="@+id/brandTextLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Brand" />
+
+                <!-- Select Product Category Button -->
+                <TextView
+                    android:id="@+id/categoryTextLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Category" />
+
+                <!-- Select Product Button -->
+                <TextView
+                    android:id="@+id/productTextLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Product" />
+            </LinearLayout>
+
+            <!--  end of label section -->
+
+            <LinearLayout
+                android:id="@+id/filterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelLayout"
+                android:layout_marginTop="-15dip"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Select Brand Button -->
+                <Button
+                    android:id="@+id/selectBrandBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="ALL"/>
+
+                <!-- Select Product Category Button -->
+                <Button
+                    android:id="@+id/selectProductCatBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="ALL    " />
+
+                <!-- Select Product Button -->
+                <Button
+                    android:id="@+id/selectProductBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="ALL   " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dataContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterLayout"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="list items.."
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_border_radius_black"
+                    android:layout_margin="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AutoComplete TextView EditTextBox"
+                        android:textColor="@color/blue_dark"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"/>
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_textview_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="autocomplete textview"
+                        android:maxLines="2"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/dp_10"
+                        android:layout_margin="18dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_border_radius_black"
+                    android:layout_margin="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button"
+                        android:textColor="@color/blue_dark"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button"
+                        android:text="Click This Button"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_cornered_black_background"
+                        android:padding="@dimen/dp_10"
+                        android:layout_margin="18dp"
+                        android:textSize="@dimen/dp_15"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_border_radius_black"
+                    android:layout_margin="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AutoComplete TextView EditTextBox"
+                        android:textColor="@color/blue_dark"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"/>
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_textview_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="autocomplete textview"
+                        android:maxLines="2"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/dp_10"
+                        android:layout_margin="18dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_border_radius_black"
+                    android:layout_margin="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Button"
+                        android:textColor="@color/blue_dark"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button2"
+                        android:text="Click This Button"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_cornered_black_background"
+                        android:padding="@dimen/dp_10"
+                        android:layout_margin="18dp"
+                        android:textSize="@dimen/dp_15"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.amar.library.ui.StickyScrollView>
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_weight="1"
+        android:background="#277fd5"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>
