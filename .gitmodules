@@ -2,3 +2,6 @@
 [submodule "demo"]
 	path = demo
 	url = https://github.com/poojasngh432/Tools_Demo_App.git
+[submodule "baselib"]
+	path = baselib
+	url = https://github.com/poojasngh432/AndroidExamplesJava.git
