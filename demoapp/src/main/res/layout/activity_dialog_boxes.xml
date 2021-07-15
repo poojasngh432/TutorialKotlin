@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DialogBoxes">
+
+    <LinearLayout
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context=".dialogBoxes">
+
+        <Button
+            android:id="@+id/alert_builder_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="14dp"
+            android:background="@drawable/green_background_round"
+            android:padding="@dimen/dp_10"
+            android:text="Alert Builder"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/dialog_type_1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/green_background_round"
+            android:padding="@dimen/dp_10"
+            android:layout_margin="14dp"
+            android:text="Dialog Type 1"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/progress_dialog_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/green_background_round"
+            android:padding="@dimen/dp_10"
+            android:layout_margin="14dp"
+            android:text="Progress Dialog"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/positive_btn"
+                android:layout_weight="1"
+                android:background="@drawable/green_background_round"
+                android:padding="5dp"
+                android:layout_margin="14dp"
+                android:text="Positive"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/negative_btn"
+                android:layout_weight="1"
+                android:background="@drawable/green_background_round"
+                android:padding="5dp"
+                android:layout_margin="14dp"
+                android:text="Negative"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:gravity="center">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_date_edit_text"
+                android:padding="@dimen/dp_10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Select Date"/>
+            <Button
+                android:id="@+id/date_picker_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/green_background_round"
+                android:padding="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Select Date"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_time_edit_text"
+                android:background="@drawable/edit_text_border"
+                android:hint="Select Time"
+                android:padding="@dimen/dp_10"/>
+            <Button
+                android:id="@+id/time_picker_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/green_background_round"
+                android:padding="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Select Time"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

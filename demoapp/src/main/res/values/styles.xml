@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="qlik_outlet_theme" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowTitleStyle">@style/select_menu_title</item>
+    </style>
+
+    <style name="select_menu_title" parent="android:Widget.TextView">
+        <item name="android:background">#2B91E1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="Toggle"><attr format="string" name="textOn"/><attr format="string" name="textOff"/><attr format="color" name="colorOff"/><attr format="color" name="colorOn"/><attr format="color" name="colorBorder"/><attr format="color" name="colorDisabled"/><attr format="boolean" name="on"/><attr name="android:textSize"/><attr name="android:enabled"/></declare-styleable>
+    <dimen name="default_height">32dp</dimen>
+    <dimen name="default_width">72dp</dimen>
+</resources>
