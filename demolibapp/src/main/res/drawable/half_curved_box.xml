@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape android:innerRadiusRatio="1"
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" />
+    <corners android:radius="100dp" android:topRightRadius="0dp" android:bottomRightRadius="0dp"/>
+    <stroke android:width="@dimen/dp_1" android:color="@color/one_channel_theme_color" />
+    <padding android:bottom="5dp" android:left="15dp" android:right="15dp" android:top="5dp" />
+</shape>
