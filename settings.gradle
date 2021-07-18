@@ -1,3 +1,4 @@
 include ':app'
 rootProject.name = "TutorialKotlin"
-include ':demoapp'
+include ':Tools_Demo_App'
+project(':Tools_Demo_App').projectDir = new File('Tools_Demo_App/app')
