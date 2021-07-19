@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TutorialKotlin">
-        <activity android:name=".rxExample.RxJavaExamplesActivity"></activity>
+        <activity android:name=".TestingActivity"></activity>
+        <activity android:name=".rxExample.RxJavaExamplesActivity" />
         <activity android:name=".ui.NewsActivity" />
         <activity android:name=".ui.NewsDetailActivity" />
         <activity android:name=".ui.ToolbarExActivity" />
