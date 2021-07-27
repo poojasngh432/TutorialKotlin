@@ -125,6 +125,7 @@
     <color name="orange12">#DD2600</color>
 
     <!-- red -->
+    <color name="primary">#FF6F61</color>
     <color name="salmon_red">#FA8072</color>
     <color name="indian_red">#CD5C5C</color>
     <color name="firebrick_red">#B22222</color>
