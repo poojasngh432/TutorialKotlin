@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:columnCount="2"
         android:rowCount="20"
-        tools:context=".MainActivity">
+        tools:context=".TutorialsMainActivity">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/data_binding_btn"

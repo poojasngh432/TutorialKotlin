@@ -39,7 +39,7 @@
         <activity android:name=".ui.ConstraintLayoutExampleActivity" />
         <activity android:name=".ui.ViewModelActivity" />
         <activity android:name=".ui.DataBindingActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".TutorialsMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
