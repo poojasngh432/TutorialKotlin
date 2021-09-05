@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.poojasingh.tutorialkotlin.databinding.ActivityTutorialsMainBinding
+import com.poojasingh.tutorialkotlin.jetpackcompose.ui.JetpackComposeMainActivity
 import com.poojasingh.tutorialkotlin.rxExample.RxJavaExamplesActivity
 import com.poojasingh.tutorialkotlin.ui.*
 
@@ -31,8 +32,9 @@ class TutorialsMainActivity : AppCompatActivity() {
             val intent = Intent(this, ViewModelActivity::class.java)
             startActivity(intent)
         }
-        binding.clExampleBtn.setOnClickListener {
-
+        binding.jetpackComposeBtn.setOnClickListener {
+            val intent = Intent(this, JetpackComposeMainActivity::class.java)
+            startActivity(intent)
         }
         binding.serviceBtn.setOnClickListener {
             val intent = Intent(this, ServiceActivity::class.java)

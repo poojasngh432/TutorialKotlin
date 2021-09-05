@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TutorialKotlin">
-        <activity android:name=".jetpackcompose.ui.JetpackComposeMainActivity" />
+        <activity android:name=".jetpackcompose.ui.JetpackComposeMainActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
         <activity android:name=".TestingActivity" />
         <activity android:name=".rxExample.RxJavaExamplesActivity" />
         <activity android:name=".ui.NewsActivity" />
