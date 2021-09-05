@@ -4,4 +4,13 @@
     <string name="demo_text">text will change here</string>
     <string name="news_list">News List</string>
     <string name="loading_news">Loading News</string>
+    <string name="people_id">PEOPLE_ID</string>
+    <string name="hint_twitter">Twitter</string>
+    <string name="hint_facebook">Facebook</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_contact">Contact</string>
+    <string name="hint_met_at">Met At</string>
+    <string name="hint_name">Name</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
 </resources>

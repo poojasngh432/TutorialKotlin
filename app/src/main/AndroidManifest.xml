@@ -11,24 +11,21 @@
     <uses-permission android:name="android.permission.READ_CALENDAR" />
 
     <application
-        android:name="androidx.multidex.MultiDexApplication"
+        android:name=".jetpackcompose.IMetApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TutorialKotlin">
-        <activity android:name=".TestingActivity"></activity>
+        <activity android:name=".jetpackcompose.ui.JetpackComposeMainActivity" />
+        <activity android:name=".TestingActivity" />
         <activity android:name=".rxExample.RxJavaExamplesActivity" />
         <activity android:name=".ui.NewsActivity" />
         <activity android:name=".ui.NewsDetailActivity" />
-        <activity android:name=".ui.ToolbarExActivity" />
-        <activity android:name=".ui.BitmapExamplesActivity" />
         <activity android:name=".ui.WebViewActivity" />
         <activity android:name=".studyexample.SyntaxExampleActivity" />
         <activity android:name=".ui.PermissionsActivity" />
-        <activity android:name=".ui.TextViewActivity" />
-        <activity android:name=".ui.ViewExampleActivity" />
         <activity android:name=".ui.ExtensionFunctionActivity" />
         <activity android:name=".ui.ListViewHolderActivity" />
         <activity android:name=".ui.ReceiverActivity" />
@@ -36,7 +33,6 @@
         <activity android:name=".ui.ServiceActivity" />
         <activity android:name=".ui.HandlerActivity" />
         <activity android:name=".ui.DataBindingViewModelActivity" />
-        <activity android:name=".ui.ConstraintLayoutExampleActivity" />
         <activity android:name=".ui.ViewModelActivity" />
         <activity android:name=".ui.DataBindingActivity" />
         <activity android:name=".TutorialsMainActivity">
@@ -49,9 +45,9 @@
 
         <service android:name=".service.IntentServiceExample" />
         <service
-            android:name=".service.ServiceExample"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="false"
+            android:name=".service.ServiceExample" />
         <service android:name=".service.ServiceAsyncExample" />
         <service android:name=".service.MusicService" />
         <service android:name=".service.ForegroundService" />

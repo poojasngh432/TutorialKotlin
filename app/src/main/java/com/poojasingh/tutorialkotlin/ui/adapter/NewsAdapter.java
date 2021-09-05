@@ -11,6 +11,7 @@ import com.poojasingh.tutorialkotlin.R;
 import com.poojasingh.tutorialkotlin.data.remote.model.Article;
 import com.poojasingh.tutorialkotlin.databinding.NewsListItemBinding;
 import com.poojasingh.tutorialkotlin.ui.callback.OnClickCallback;
+
 import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ArticleViewHolder> {

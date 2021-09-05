@@ -1,7 +1,5 @@
 package com.poojasingh.tutorialkotlin.ui;
 
-import android.app.Activity;
-import android.content.ContextWrapper;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

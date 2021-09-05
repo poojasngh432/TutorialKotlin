@@ -14,8 +14,10 @@ import androidx.lifecycle.ViewModelProviders;
 import com.poojasingh.tutorialkotlin.R;
 import com.poojasingh.tutorialkotlin.data.remote.model.News;
 import com.poojasingh.tutorialkotlin.databinding.FragmentNewsListBinding;
-import com.poojasingh.tutorialkotlin.ui.adapter.NewsAdapter;
+import com.poojasingh.tutorialkotlin.ui.adapter.*;
 import com.poojasingh.tutorialkotlin.viewmodel.NewsViewModel;
+
+import java.util.Objects;
 
 public class ArticleListFragment extends Fragment {
     public static final String TAG = "ArticleListFragment";
@@ -40,7 +42,7 @@ public class ArticleListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         NewsViewModel.Factory factory = new NewsViewModel.Factory(
-                getActivity().getApplication());
+                Objects.requireNonNull(getActivity()).getApplication());
 
         final NewsViewModel viewModel = ViewModelProviders.of(this, factory)
                 .get(NewsViewModel.class);

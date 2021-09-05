@@ -9,7 +9,6 @@ import android.widget.Toast
 import com.poojasingh.tutorialkotlin.R
 import com.poojasingh.tutorialkotlin.util.ManagePermissions
 import kotlinx.android.synthetic.main.activity_permissions.*
-import kotlinx.android.synthetic.main.constraint_layout_example.*
 
 class PermissionsActivity : AppCompatActivity() {
     private val PermissionsRequestCode = 123

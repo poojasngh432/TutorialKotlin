@@ -14,8 +14,8 @@ class DataBindingActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityDataBindingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_data_binding)
         super.onCreate(savedInstanceState)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_data_binding)
         binding.lifecycleOwner = this
 
     }
@@ -30,14 +30,6 @@ class DataBindingActivity : AppCompatActivity(), View.OnClickListener {
 
                 binding.btnTwoWay.id -> {
                     val intent = Intent(this, ViewModelActivity::class.java)
-                    startActivity(intent)
-                }
-                binding.edittextDb.id -> {
-                    val intent = Intent(this, ConstraintLayoutExampleActivity::class.java)
-                    startActivity(intent)
-                }
-                binding.textviewDb.id -> {
-                    val intent = Intent(this, ConstraintLayoutExampleActivity::class.java)
                     startActivity(intent)
                 }
 

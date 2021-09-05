@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.invissvenska:Pulsating-Ripple:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e777584250bb13385829b1be7f694b23/jetified-Pulsating-Ripple-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e777584250bb13385829b1be7f694b23/jetified-Pulsating-Ripple-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e777584250bb13385829b1be7f694b23/jetified-Pulsating-Ripple-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.invissvenska/Pulsating-Ripple/1.0.0/d552c2dbb4c9ff815ee75f4993eabeae69a12e1d/Pulsating-Ripple-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
