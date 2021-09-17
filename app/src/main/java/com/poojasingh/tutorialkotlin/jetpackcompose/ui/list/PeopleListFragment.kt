@@ -8,8 +8,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import com.poojasingh.tutorialkotlin.R
+import com.poojasingh.tutorialkotlin.databinding.FragmentPeoplesListBinding
 import com.poojasingh.tutorialkotlin.jetpackcompose.data.model.People
-import kotlinx.android.synthetic.main.fragment_peoples_list.*
 
 class PeopleListFragment : Fragment(),
     PeoplesListAdapter.OnItemClickListener,
@@ -18,6 +18,7 @@ class PeopleListFragment : Fragment(),
 
     private lateinit var searchView: SearchView
     private lateinit var viewModel: PeoplesListViewModel
+    private lateinit var binding: FragmentPeoplesListBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +30,8 @@ class PeopleListFragment : Fragment(),
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_peoples_list, container, false)
+        binding = FragmentPeoplesListBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -53,7 +55,7 @@ class PeopleListFragment : Fragment(),
         })
 
         // Navigate to add people
-        addFab.setOnClickListener {
+        binding.addFab.setOnClickListener {
             view.findNavController().navigate(R.id.action_peopleListFragment_to_addPeopleFragment)
         }
     }
@@ -84,7 +86,7 @@ class PeopleListFragment : Fragment(),
      * Populates peopleRecyclerView with all people info
      */
     private fun populatePeopleList(peopleList: List<People>) {
-        peopleRecyclerView.adapter = PeoplesListAdapter(peopleList, this)
+        binding.peopleRecyclerView.adapter = PeoplesListAdapter(peopleList, this)
     }
 
     /**

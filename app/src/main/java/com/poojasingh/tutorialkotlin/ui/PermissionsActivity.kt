@@ -6,17 +6,18 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.poojasingh.tutorialkotlin.R
+import com.poojasingh.tutorialkotlin.databinding.ActivityPermissionsBinding
 import com.poojasingh.tutorialkotlin.util.ManagePermissions
-import kotlinx.android.synthetic.main.activity_permissions.*
 
 class PermissionsActivity : AppCompatActivity() {
     private val PermissionsRequestCode = 123
     private lateinit var managePermissions: ManagePermissions
+    private lateinit var binding: ActivityPermissionsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_permissions)
+        binding = ActivityPermissionsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Initialize a list of required permissions to request runtime
         val list = listOf<String>(
@@ -31,7 +32,7 @@ class PermissionsActivity : AppCompatActivity() {
         managePermissions = ManagePermissions(this,list,PermissionsRequestCode)
 
         // Button to check permissions states
-        ask_permissions_btn.setOnClickListener{
+        binding.askPermissionsBtn.setOnClickListener{
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
                 managePermissions.checkPermissions()
         }

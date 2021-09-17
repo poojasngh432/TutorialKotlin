@@ -80,6 +80,10 @@ class TutorialsMainActivity : AppCompatActivity() {
             val intent = Intent(this, NewsActivity::class.java)
             startActivity(intent)
         }
+        binding.cameraXBtn.setOnClickListener {
+            val intent = Intent(this, CameraXActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

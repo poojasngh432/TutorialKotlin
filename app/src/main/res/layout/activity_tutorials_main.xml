@@ -205,14 +205,14 @@
             android:textColor="@color/black" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/new_btn2"
+            android:id="@+id/cameraXBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="0.5"
             android:layout_margin="@dimen/dp_5"
             android:background="@drawable/round_corner_bg_pink"
             style="@style/CardView.Light"
-            android:text="Edit"
+            android:text="CameraX"
             android:textColor="@color/black" />
 
         <androidx.appcompat.widget.AppCompatButton
